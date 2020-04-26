@@ -1,18 +1,4 @@
   
-from numpy import loadtxt
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.metrics import Precision , Recall
-from sklearn.metrics import accuracy_score , precision_score , recall_score , f1_score
-
-dataset = loadtxt('annthyroid.csv' , delimiter = ',')
-train_size = int((7200*(0.7)))
-X_test = dataset[0:train_size,0:6]
-Y_test = dataset[0:train_size,6]
-X_val = dataset[train_size:,0:6]
-Y_val = dataset[train_size:,6]
-
-
 import pandas as pd
 
 from google.colab import files
