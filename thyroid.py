@@ -69,4 +69,4 @@ plt.title('Predictions on testing data')
 plt.xlabel('Anomaly Score (x 100)')
 plt.ylabel('Total')
 '''
-
+print("executed")
